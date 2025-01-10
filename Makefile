@@ -1,10 +1,16 @@
 # Makefile
 
-install: # установить зависимости
+# установить зависимости
+install:
 	composer install
 
-brain-games: # start game
+# start game
+brain-games:
 	./bin/brain-games
 
 validate:
 	composer validate
+
+# проверка линтером
+lint: 
+	composer exec --verbose phpcs -- --standard=PSR12 src bin
