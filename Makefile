@@ -14,3 +14,11 @@ validate:
 # проверка линтером
 lint: 
 	composer exec --verbose phpcs -- --standard=PSR12 src bin
+
+# запиши, что б не забыть
+dump-autoload:
+	composer dump-autoload
+
+# start game
+brain-even:
+	./bin/brain-even
