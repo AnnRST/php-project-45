@@ -22,3 +22,7 @@ dump-autoload:
 # start game
 brain-even:
 	./bin/brain-even
+
+# start game
+brain-calc:
+	./bin/brain-calc

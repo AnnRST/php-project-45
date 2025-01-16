@@ -7,22 +7,29 @@
         },
         "files": [
             "src/Cli.php",
-            "src/Even.php"
+            "src/Even.php",
+            "src/Calc.php",
+            "src/Engine.php"
         ]
     },
+    
     "authors": [
         {
             "name": "AnnRST",
             "email": "ann.rst@gmail.com"
         }
     ],
+
     "require": {
         "wp-cli/php-cli-tools": "^0.12.1"
     },
+
     "bin": [
         "bin/brain-games",
-        "bin/brain-even"
+        "bin/brain-even",
+        "bin/brain-calc"
     ],
+
     "require-dev": {
         "squizlabs/php_codesniffer": "*"
     }
