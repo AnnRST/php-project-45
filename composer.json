@@ -9,7 +9,9 @@
             "src/Cli.php",
             "src/Even.php",
             "src/Calc.php",
-            "src/Engine.php"
+            "src/Engine.php",
+            "src/Gcd.php",
+            "src/Progression.php"
         ]
     },
     
@@ -27,7 +29,9 @@
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
-        "bin/brain-calc"
+        "bin/brain-calc",
+        "bin/brain-gcd",
+        "bin/brain-progression"
     ],
 
     "require-dev": {
