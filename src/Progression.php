@@ -12,7 +12,7 @@ function progression(string $name)
     play(generateGameData(), $name);
 }
 
-function generateProgression(): array 
+function generateProgression(): array
 {
     $firstNumber = random_int(0, 100);
     $step = random_int(0, 10);
@@ -30,15 +30,15 @@ function generateProgression(): array
 function generateGameData(): array
 {
     $result = [];
-    
+
     for ($i = 0; $i < 3; $i++) {
         $progression = generateProgression();
-        $hiddenIndex = random_int(0, max: count($progression) -1);
+        $hiddenIndex = random_int(0, max: count($progression) - 1);
         $correctAnswer = (string) $progression[$hiddenIndex];
         $progression[$hiddenIndex] = '..';
         $question = implode(' ', $progression);
-        
+
         $result[] = [$question, $correctAnswer];
-    } 
+    }
     return $result;
 }

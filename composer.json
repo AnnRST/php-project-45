@@ -11,7 +11,8 @@
             "src/Calc.php",
             "src/Engine.php",
             "src/Gcd.php",
-            "src/Progression.php"
+            "src/Progression.php",
+            "src/Prime.php"
         ]
     },
     
@@ -31,7 +32,8 @@
         "bin/brain-even",
         "bin/brain-calc",
         "bin/brain-gcd",
-        "bin/brain-progression"
+        "bin/brain-progression",
+        "bin/brain-prime"
     ],
 
     "require-dev": {

@@ -22,7 +22,7 @@ function generateOperation(): string
 
 function getCorrectAnswer(int $num1, int $num2, string $operation): string
 {
-    if  ($operation === '+') {
+    if ($operation === '+') {
         $correctAnswer = $num1 + $num2;
     }
     if ($operation === '-') {
@@ -37,7 +37,6 @@ function getCorrectAnswer(int $num1, int $num2, string $operation): string
 function generateGameData(): array
 {
     $result = [];
-    
     for ($i = 0; $i < 3; $i++) {
         $num1 = random_int(0, 100);
         $num2 = random_int(0, 100);
@@ -45,6 +44,6 @@ function generateGameData(): array
         $question = ("{$num1} {$operation} {$num2}");
         $correctAnswer = getCorrectAnswer($num1, $num2, $operation);
         $result[] = [$question, $correctAnswer];
-    } 
+    }
     return $result;
 }

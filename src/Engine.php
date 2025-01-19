@@ -5,7 +5,6 @@ namespace BrainGames\Engine;
 use function cli\line;
 use function cli\prompt;
 
-// gameData это массив с массивами по каждому из раундов (Вопрос - ответ) 
 function play(array $gameData, string $name)
 {
     foreach ($gameData as $round) {
@@ -19,7 +18,7 @@ function play(array $gameData, string $name)
             return;
         }
 
-        line('Correct!'); 
+        line('Correct!');
     }
     line('Congratulations, %s!', $name);
 }

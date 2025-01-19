@@ -20,11 +20,11 @@ function getAnswer(int $number): string
 function generateGameData(): array
 {
     $result = [];
-    
+
     for ($i = 0; $i < 3; $i++) {
         $number = random_int(0, 1000);
         $correctAnswer = getAnswer($number);
         $result[] = [$number, $correctAnswer];
-    } 
+    }
     return $result;
 }
