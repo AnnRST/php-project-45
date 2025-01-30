@@ -11,7 +11,7 @@ function isPrime(string $name)
     line('Answer "yes" if given number is prime. Otherwise answer "no".');
     play(generateGameData(), $name);
 }
-function getAnswer($num)
+function getAnswer(int $num)
 {
     if ($num == 1) {
         return false;

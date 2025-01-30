@@ -20,18 +20,17 @@ function generateOperation(): string
     return OPERATIONS[$index];
 }
 
-function getCorrectAnswer(int $num1, int $num2, string $operation): string
+function getCorrectAnswer(int $num1, int $num2, string $operation)
 {
     if ($operation === '+') {
-        $correctAnswer = $num1 + $num2;
+        return $num1 + $num2;
     }
+
     if ($operation === '-') {
-        $correctAnswer = $num1 - $num2;
+        return $num1 - $num2;
     }
-    if ($operation === '*') {
-        $correctAnswer = $num1 * $num2;
-    }
-    return $correctAnswer;
+
+    return $num1 * $num2;
 }
 
 function generateGameData(): array
@@ -42,7 +41,7 @@ function generateGameData(): array
         $num2 = random_int(0, 100);
         $operation = generateOperation();
         $question = ("{$num1} {$operation} {$num2}");
-        $correctAnswer = getCorrectAnswer($num1, $num2, $operation);
+        $correctAnswer = (string) getCorrectAnswer($num1, $num2, $operation);
         $result[] = [$question, $correctAnswer];
     }
     return $result;

@@ -33,12 +33,13 @@ function generateGameData(): array
 
     for ($i = 0; $i < 3; $i++) {
         $progression = generateProgression();
-        $hiddenIndex = random_int(0, max: count($progression) - 1);
+        $hiddenIndex = random_int(0, max: (count($progression) - 1));
         $correctAnswer = (string) $progression[$hiddenIndex];
         $progression[$hiddenIndex] = '..';
         $question = implode(' ', $progression);
 
         $result[] = [$question, $correctAnswer];
     }
+
     return $result;
 }
