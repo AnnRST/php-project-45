@@ -12,8 +12,8 @@ function gcd(string $name)
     play(generateGameData(), $name);
 }
 
-function getCorrectAnswer(int $num1, int $num2): string
-{
+function getCorrectAnswer(int $num1, int $num2)
+{    
     $correctAnswer = min($num1, $num2);
     while ($correctAnswer > 0) {
         if ($num1 % $correctAnswer === 0 && $num2 % $correctAnswer === 0) {
@@ -21,7 +21,6 @@ function getCorrectAnswer(int $num1, int $num2): string
         }
         $correctAnswer -= 1;
     }
-    return '1';
 }
 
 function generateGameData(): array
