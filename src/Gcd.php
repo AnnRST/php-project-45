@@ -17,10 +17,11 @@ function getCorrectAnswer(int $num1, int $num2): string
     $correctAnswer = min($num1, $num2);
     while ($correctAnswer > 0) {
         if ($num1 % $correctAnswer === 0 && $num2 % $correctAnswer === 0) {
-            return $correctAnswer;
+            return "{$correctAnswer}";
         }
         $correctAnswer -= 1;
     }
+    return '1';
 }
 
 function generateGameData(): array
