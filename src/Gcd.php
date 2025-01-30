@@ -8,7 +8,7 @@ use function BrainGames\Engine\play;
 
 function gcd(string $name)
 {
-    line('Find the greatest common divisior of given numbers');
+    line('Find the greatest common divisior of given numbers.');
     play(generateGameData(), $name);
 }
 
