@@ -20,7 +20,7 @@ function generateProgression(): array
     $dataArray = [];
     $dataArray[0] = $firstNumber;
 
-    for ($i = 1; $i < ($progressionLenght - 1); $i++) {
+    for ($i = 0; $i < ($progressionLenght); $i++) {
         $dataArray[$i] = $dataArray[$i - 1] + $step;
     }
 
