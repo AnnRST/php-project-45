@@ -28,8 +28,8 @@ function generateGameData(): array
     $result = [];
 
     for ($i = 0; $i < 3; $i++) {
-        $num1 = random_int(0, 100);
-        $num2 = random_int(0, 100);
+        $num1 = random_int(1, 100);
+        $num2 = random_int(1, 100);
         $question = ("{$num1} {$num2}");
         $correctAnswer = getCorrectAnswer($num1, $num2);
         $result[] = [$question, $correctAnswer];
